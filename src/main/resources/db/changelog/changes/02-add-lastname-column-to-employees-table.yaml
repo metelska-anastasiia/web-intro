@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-lastname-column-to-employees-table
+      author: AnastasiiaMetelska
+      changes:
+        - addColumn:
+            tableName: employees
+            columns:
+              - column:
+                  name: lastname
+                  type: varchar(255)
